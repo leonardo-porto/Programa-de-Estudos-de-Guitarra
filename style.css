@@ -189,24 +189,26 @@ h1{
     color: orangered;
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 100%;
     animation: setas 1s linear infinite;
     cursor: pointer;
+   
 
 }
 
 #esquerda{
 
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 550px;
+    text-shadow: 3px 2px 3px black;
 }
 
 #direita{
 
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 800px;
+    text-shadow: 3px 2px 3px black;
 }
 
 
@@ -2399,12 +2401,13 @@ body{
     position: absolute;
     top: 3px;
     right: -550px;
-    background-color: rgb(51, 49, 49);
+    background-image: linear-gradient(to top, rgb(39, 38, 38), rgb(99, 97, 97), rgb(70, 68, 68), rgb(20, 20, 20));
     border-radius: 10px;
     width: 500px;       
     margin-right: 0;
     transition: all 2s;
     z-index: 50;
+    box-shadow: -15px 10px 4px rgba(0, 0, 0, 0.637);
 }
 
 @keyframes aparecer{
@@ -2425,11 +2428,13 @@ body{
     height: 300px;
     width: 380px;
     position: absolute;
+    background-color: rgba(50, 55, 56, 0.315);
     top: 80px;
     z-index: -5;
     left: 100px;
     display: none;
     transition: all 2s;
+    box-shadow: 10px 10px 5px black;
     
     
 }
