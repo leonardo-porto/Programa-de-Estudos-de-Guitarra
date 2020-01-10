@@ -206,7 +206,7 @@ h1{
 #video {
 
     position: absolute;
-    top: 1150px;
+    top: 580px;
     right: -25px;
     border-radius: 10px;
 }
@@ -2382,6 +2382,7 @@ body{
     width: 500px;       
     margin-right: 0;
     transition: all 2s;
+    z-index: 50;
 }
 
 @keyframes aparecer{
@@ -2454,7 +2455,7 @@ body{
 #pdf{
 
     position: absolute;
-    top: 700px;
+    top: 580px;
     left: -10px;
 }
 
