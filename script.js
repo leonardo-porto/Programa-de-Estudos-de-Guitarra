@@ -2840,4 +2840,5 @@ for (i = 0; i < nota.length; i++) {
 
 
 
+
 apagar()
