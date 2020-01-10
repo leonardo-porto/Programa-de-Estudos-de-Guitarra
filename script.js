@@ -38,10 +38,72 @@ let esquerda = document.getElementById('esquerda')
 let direita = document.getElementById('direita')
 let contadorPosicao = 1
 
+
+
+
+
 menuH.onclick = function () {
 
     lista.style.right = '10px'
+
+    for (i = 0; i < corda.length; i++) {
+
+        corda[i].style.filter = 'blur(5px)'
+
+
+    }
+
     
+    for (i = 0; i < bolinha.length; i++) {
+
+        bolinha[i].style.filter = 'blur(5px)'
+
+
+    }
+
+    for (i = 0; i < traste.length; i++) {
+
+        traste[i].style.filter = 'blur(5px)'
+
+
+    }
+
+    for (i = 0; i < nota.length; i++) {
+
+        nota[i].style.filter = 'blur(5px)'
+
+
+    }
+
+
+
+}
+
+if (lista.style.right == '-550px') {
+
+    for (i = 0; i < corda.length; i++) {
+
+        corda[i].style.filter = 'blur(0px)'
+
+
+    }
+
+    for (i = 0; i < traste.length; i++) {
+
+        traste[i].style.filter = 'blur(0px)'
+
+
+    }
+
+    for (i = 0; i < nota.length; i++) {
+
+        nota[i].style.filter = 'blur(0px)'
+
+
+    }
+
+
+
 }
 
 esquerda.onclick = function () {
@@ -49,46 +111,46 @@ esquerda.onclick = function () {
     console.log('esquerda')
     contadorPosicao--
     console.log(contadorPosicao)
-    
-    if(contadorPosicao == 0){
+
+    if (contadorPosicao == 0) {
 
         molduraF(0)
 
 
-    } else if(contadorPosicao == 1){
+    } else if (contadorPosicao == 1) {
 
         molduraF(3)
 
 
-    } else if(contadorPosicao == 2){
+    } else if (contadorPosicao == 2) {
 
         molduraF(5)
 
 
-    } else if(contadorPosicao == 3){
+    } else if (contadorPosicao == 3) {
 
         molduraF(8)
 
 
-    } else if(contadorPosicao == 4){
+    } else if (contadorPosicao == 4) {
 
         molduraF(10)
 
 
-    } else if(contadorPosicao <= 0){
+    } else if (contadorPosicao <= 0) {
 
         molduraF(0)
         contadorPosicao = 0
 
 
-    } else if(contadorPosicao >= 4){
+    } else if (contadorPosicao >= 4) {
 
         molduraF(10)
         contadorPosicao = 4
 
 
     }
-    
+
 }
 
 direita.onclick = function () {
@@ -97,45 +159,45 @@ direita.onclick = function () {
     contadorPosicao++
     console.log(contadorPosicao)
 
-    if(contadorPosicao == 0){
+    if (contadorPosicao == 0) {
 
         molduraF(0)
 
 
-    } else if(contadorPosicao == 1){
+    } else if (contadorPosicao == 1) {
 
         molduraF(3)
 
 
-    } else if(contadorPosicao == 2){
+    } else if (contadorPosicao == 2) {
 
         molduraF(5)
 
 
-    } else if(contadorPosicao == 3){
+    } else if (contadorPosicao == 3) {
 
         molduraF(8)
 
 
-    } else if(contadorPosicao == 4){
+    } else if (contadorPosicao == 4) {
 
         molduraF(10)
 
 
-    } else if(contadorPosicao <= 0){
+    } else if (contadorPosicao <= 0) {
 
         molduraF(0)
         contadorPosicao = 0
 
 
-    } else if(contadorPosicao >= 4){
+    } else if (contadorPosicao >= 4) {
 
         molduraF(10)
         contadorPosicao = 4
 
 
     }
-    
+
 }
 
 
@@ -395,7 +457,37 @@ ex2.onclick = function () {
 lista.onmouseleave = function () {
 
     lista.style.right = '-550px'
+    for (i = 0; i < corda.length; i++) {
+
+        corda[i].style.filter = 'blur(0px)'
+
+
+    }
+
     
+
+    for (i = 0; i < traste.length; i++) {
+
+        traste[i].style.filter = 'blur(0px)'
+
+
+    }
+
+    
+    for (i = 0; i < bolinha.length; i++) {
+
+        bolinha[i].style.filter = 'blur(0px)'
+
+
+    }
+
+    for (i = 0; i < nota.length; i++) {
+
+        nota[i].style.filter = 'blur(0px)'
+
+
+    }
+
 }
 
 ex3.onclick = function () {
@@ -408,7 +500,7 @@ ex3.onclick = function () {
 ex4.onclick = function () {
 
     lista.style.right = '-550px'
-    
+
 }
 
 
