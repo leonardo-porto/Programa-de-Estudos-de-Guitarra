@@ -285,6 +285,12 @@ timerSvg.onclick = function () {
 
     }, 1000 * 60 * 5)
 
+    setTimeout(function () {
+
+        alert('Exercício finalizado!!!')
+        
+    }, 1000*60*10)
+
 }
 
 
